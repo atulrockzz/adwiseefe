@@ -15,7 +15,7 @@
    "src/**/*",
    "manifest/**",
    "images/**/*",
-   "config.html",
+   "config.js",
    "package.json"
   ],
   "extraDependencies": [
