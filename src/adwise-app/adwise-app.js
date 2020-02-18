@@ -255,9 +255,7 @@ class AdwiseApp extends PolymerElement {
         break;
       case 'added-slots': import('./added-slots.js')
         break;
-      case 'sold-slots': import('./sold-slots.js')
-        break;
-        case 'confirm-booking': import('./confirm-booking.js')
+      case 'confirm-booking': import('./confirm-booking.js')
         break;
       default: import('./error-page.js')
         break;
