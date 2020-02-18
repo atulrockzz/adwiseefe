@@ -8,8 +8,7 @@
     "src/adwise-app/ajax-call.js",
     "src/adwise-app/error-page.js",
     "src/adwise-app/login-page.js",
-    "src/adwise-app/sales-home.js",
-    "src/adwise-app/sold-slots.js"
+    "src/adwise-app/sales-home.js"
   ],
   "sources": [
    "src/**/*",
