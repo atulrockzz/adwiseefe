@@ -1,6 +1,6 @@
 {
   "entrypoint": "index.html",
-  "shell": "src/onboarding-app/onboarding-app.js",
+  "shell": "src/adwise-app/adwise-app.js",
   "fragments": [
     "src/adwise-app/adwise-app.js",
     "src/adwise-app/added-slots.js",
