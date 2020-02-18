@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>adWise</title>
+    <meta name="description" content="Advertise management">
+    <style>
+      *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+      }
+    </style>
+    <script defer src="config.js"></script>
+    <!-- See https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="./manifest.json">
+    <script>
+      window.MyAppGlobals={rootPath:'/'}
+    </script>
+    <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <script type="module" src="src/adwise-app/adwise-app.js" crossorigin></script>
+  </head>
+  <body>
+    <adWise-app></adWise-app>
+  </body>
+</html>

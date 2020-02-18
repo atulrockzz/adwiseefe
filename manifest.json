@@ -1,0 +1,7 @@
+{
+  "name": "adWise",
+  "short_name": "adWise",
+  "description": "Advertise management",
+  "start_url": "/",
+  "display": "standalone"
+}

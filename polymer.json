@@ -1,0 +1,49 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/onboarding-app/onboarding-app.js",
+  "fragments": [
+    "src/adwise-app/adwise-app.js",
+    "src/adwise-app/added-slots.js",
+    "src/adwise-app/admin-home.js",
+    "src/adwise-app/ajax-call.js",
+    "src/adwise-app/error-page.js",
+    "src/adwise-app/login-page.js",
+    "src/adwise-app/sales-home.js",
+    "src/adwise-app/sold-slots.js"
+  ],
+  "sources": [
+   "src/**/*",
+   "manifest/**",
+   "images/**/*",
+   "config.html",
+   "package.json"
+  ],
+  "extraDependencies": [
+    "manifest.json",
+    "node_modules/@webcomponents/webcomponentsjs/**"
+  ],
+  "moduleResolution": "node",
+  "npm": true,
+  "builds": [
+    { 
+      "name": "es5prod",
+      "preset": "es5-bundled",
+      "addServiceWorker": true
+    },
+    { 
+      "name": "es6prod",
+      "preset": "es6-unbundled",
+      "addServiceWorker": true
+    },
+    { 
+      "name": "es6-bundled",
+      "preset": "es6-bundled",
+      "addServiceWorker": true
+    }
+  ],
+  "lint":{
+    "rules":[
+      "polymer-3"
+    ]
+  }
+}
