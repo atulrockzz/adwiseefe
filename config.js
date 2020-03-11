@@ -1,3 +1,3 @@
 (function() {
-        window.baseUrl = 'http://10.117.189.28:9090';
+        window.baseUrl = 'http://3.6.235.13:9090';
 })();
