@@ -194,7 +194,7 @@ console.log(event.model.item,"i'm here")
       this.postObj={slotId,planId,slotDate:this.slotDate,slotFromTime,slotToTime,customerName}
       this.push('postData',this.postObj);
       console.log(this.postData)
-    this.$.ajax._makeAjaxCall('post', `http://10.117.189.176:9090/adwise/users/${sessionStorage.getItem('userId')}/bookings`,this.postData, 'confirmSlot')
+    this.$.ajax._makeAjaxCall('post', `http://3.6.235.13:9090/adwise/users/${sessionStorage.getItem('userId')}/bookings`,this.postData, 'confirmSlot')
    }
   _calculateTotal(e){
     let index=e.model.index;
