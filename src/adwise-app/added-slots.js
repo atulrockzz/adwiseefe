@@ -112,7 +112,7 @@ class AddedSlots extends PolymerElement {
   }
   _handleClick() {
     this.checkDate = this.$.checkDate.date;
-    this.$.ajax._makeAjaxCall('get', `http://10.117.189.176:9090/adwise/users?date=${this.checkDate}&userId=${sessionStorage.getItem('userId')}`, null, 'ajaxResponse')
+    this.$.ajax._makeAjaxCall('get', `http://13.233.200.130:9090/adwise/users?date=${this.checkDate}&userId=${sessionStorage.getItem('userId')}`, null, 'ajaxResponse')
   }
 }
 window.customElements.define('added-slots', AddedSlots);
