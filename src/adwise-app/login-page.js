@@ -105,7 +105,7 @@ class LoginPage extends PolymerElement {
     const password=this.$.password.value;
     let postObj={mobileNumber,password}
     this.waiting = true;
-     this.$.ajax._makeAjaxCall('post',`http://10.117.189.176:9090/adwise/users/login`,postObj,'ajaxResponse')  
+     this.$.ajax._makeAjaxCall('post',`http://3.6.235.13:9090/adwise/users/login`,postObj,'ajaxResponse')  
     }
     else{
       console.log(errorCodes)
