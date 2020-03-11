@@ -186,7 +186,7 @@ class AdminHome extends PolymerElement {
   _handleClick() {
     this.checkDate = this.$.checkDate.date;
     console.log(this.checkDate)
-    this.$.ajax._makeAjaxCall('get', `http://10.117.189.176:9090/adwise/slots?slotDate=${this.checkDate}`, null, 'availableSlots')
+    this.$.ajax._makeAjaxCall('get', `http://13.233.200.130:9090/adwise/slots?slotDate=${this.checkDate}`, null, 'availableSlots')
   }
   /**
    *@description:_handleBook() navigates to added-slots page
@@ -209,7 +209,7 @@ class AdminHome extends PolymerElement {
       slotFromTime: this.fromTime,
       slotToTime: this.toTime
     }
-    this.$.ajax._makeAjaxCall('post', `http://10.117.189.176:9090/adwise/users/${parseInt(sessionStorage.getItem('userId'))}/slot`, postObj, 'confirmSlot');
+    this.$.ajax._makeAjaxCall('post', `http://13.233.200.130:9090/adwise/users/${parseInt(sessionStorage.getItem('userId'))}/slot`, postObj, 'confirmSlot');
   }
   _bookSlot(event) {
     if (event.detail.data.statusCode === 'DCNC0005') {
@@ -253,7 +253,7 @@ class AdminHome extends PolymerElement {
       this.dateValidationMessage = ''
       this.$.addSlotDialog.style.border = "2px solid steelblue";
       this.waiting = true;
-      this.$.ajax._makeAjaxCall('get', `http://10.117.189.176:9090/adwise/plans?date=${this.date}&fromTime=${this.fromTime}&toTime=${this.toTime}`, null, 'ajaxResponse');
+      this.$.ajax._makeAjaxCall('get', `http://13.233.200.130:9090/adwise/plans?date=${this.date}&fromTime=${this.fromTime}&toTime=${this.toTime}`, null, 'ajaxResponse');
     }
   }
 }
