@@ -141,7 +141,7 @@ class SalesHome extends PolymerElement {
   }
   _handleClick(){
        this.date=this.$.availableDate.date;
-    this.$.ajax._makeAjaxCall('get', `http://10.117.189.176:9090/adwise/slots?slotDate=${this.date}`, null, 'ajaxResponse')
+    this.$.ajax._makeAjaxCall('get', `http://3.6.235.13:9090/adwise/slots?slotDate=${this.date}`, null, 'ajaxResponse')
   }
   ready()
 {
